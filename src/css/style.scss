@@ -1,0 +1,263 @@
+//global color variables
+$primary-color: #ff0000;
+$secondary-color: #0000ff;
+$nav-color: #FFFFFE;
+$logo-color: #38B6FE;
+$span-color: #cdd8df;
+$NavDropdown-color: #38B6FE;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $primary-color;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+// nav-bar background color
+.nav-color {
+    background-color: $nav-color;
+}
+
+.logo {
+    font-size: 2em;
+    color: $primary-color;
+    font-weight: 500;
+
+    span {
+        color: $span-color;
+    }
+}
+
+header {
+    display: border-Box;
+    justify-content: space-between;
+    align-items: center;
+
+    // padding: 1em 2em;
+    .logo {
+        font-size: 2em;
+        color: $primary-color;
+        font-weight: 500;
+
+        span {
+            color: $secondary-color;
+        }
+    }
+
+    .nav-dropdown {
+        background-color: $NavDropdown-color;
+        border-radius: 7px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 2em;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-size: 1.5em;
+
+                    // font-weight: 500;
+                    &:hover {
+                        $secondary-color: #0000ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.card-banner {
+    aspect-ratio: 16 / 9; /* Example: widescreen aspect ratio */
+    overflow: hidden;
+  }
+  
+  img.program-img.gm-added.gm-lazy.gm-loaded.gm-observing.gm-observing-cb {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* General Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 18rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-header {
+    position: relative;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-banner {
+    margin-bottom: 10px;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-info {
+    margin-bottom: 20px;
+  }
+  
+  .card-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .logo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .course-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .certificate-details {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .program-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .schedule-details {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .duration {
+    font-weight: bold;
+  }
+  
+  .batch-start {
+    color: #007BFF;
+  }
+  
+  .know-more-btn {
+    font-size: 0.9rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .know-more-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .course-title {
+      font-size: 1.1rem;
+    }
+  
+    .certificate-details {
+      font-size: 0.85rem;
+    }
+  
+    .schedule-details {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .card-header {
+      margin-bottom: 15px;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .course-title {
+      font-size: 1rem;
+    }
+  
+    .certificate-details {
+      font-size: 0.8rem;
+    }
+  
+    .schedule-details {
+      font-size: 0.8rem;
+    }
+  
+    .know-more-btn {
+      font-size: 0.85rem;
+    }
+  }
+  
