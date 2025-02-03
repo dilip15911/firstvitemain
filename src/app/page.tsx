@@ -17,6 +17,7 @@ const App = () => {
         <CustomNavbarWrapper />
         <MyCustomCarousel />
         <ProgramCard />
+       
         
         <Routes>
           <Route path="/login" element={<Login />} />
