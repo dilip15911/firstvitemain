@@ -97,10 +97,10 @@ app.post("/userData", async (req, res) => {
       .catch((error) => {
         res.send({ status: "error", data: error });
       });
-  } catch (error) {}
+  } catch (error) { }
 });
 
-app.listen(5000, () => {
+app.listen(3000, () => {
   console.log("Server Started");
 });
 
@@ -115,7 +115,7 @@ app.post("/forgot-password", async (req, res) => {
     const token = jwt.sign({ email: oldUser.email, id: oldUser._id }, secret, {
       expiresIn: "5m",
     });
-    const link = `http://localhost:5000/reset-password/${oldUser._id}/${token}`;
+    const link = `http://localhost:3000/reset-password/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -139,7 +139,7 @@ app.post("/forgot-password", async (req, res) => {
       }
     });
     console.log(link);
-  } catch (error) {}
+  } catch (error) { }
 });
 
 app.get("/reset-password/:id/:token", async (req, res) => {
@@ -236,7 +236,7 @@ app.get("/get-image", async (req, res) => {
     await Images.find({}).then((data) => {
       res.send({ status: "ok", data: data });
     });
-  } catch (error) {}
+  } catch (error) { }
 });
 
 app.get("/paginatedUsers", async (req, res) => {
