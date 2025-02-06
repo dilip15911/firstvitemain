@@ -16,6 +16,7 @@ import Product from "./components/products";
 import About from "./components/about";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+
 function App() {
   const isLoggedIn = window.localStorage.getItem("loggedIn"); // Check if logged in
   const userType = window.localStorage.getItem("userType");

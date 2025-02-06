@@ -303,3 +303,69 @@ header {
     }
   }
   
+
+  //admin ui/ux
+
+
+  /* App.css */
+
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar .navbar-brand {
+  padding-left: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.top-nav {
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-col {
+  background-color: #343a40;
+}
+
+.sidebar .nav-link, .sidebar .dropdown-item {
+  color: #ddd;
+}
+
+.sidebar .nav-link:hover, .sidebar .dropdown-item:hover {
+  background-color: #495057;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .top-nav {
+    margin-bottom: 0;
+  }
+}

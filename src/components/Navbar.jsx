@@ -8,10 +8,14 @@ import Navbar from 'react-bootstrap/Navbar'; // Bootstrap Navbar component
 import NavDropdown from 'react-bootstrap/NavDropdown'; // Bootstrap NavDropdown component
 import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 const CustomNavbarWrapper = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary p-0">
+        <Navbar expand="lg" className="bg-body-tertiary p-0" style={{position: "fixed", width: "100%", zIndex:"10" }}>
             <Container fluid>
                 <Navbar.Brand className="mx-2" href="#">
                     <span style={{ color: '#F47C26', fontWeight: 'bolder', fontSize: '1.5em' }}>First</span>
@@ -50,6 +54,12 @@ const CustomNavbarWrapper = () => {
                             </Button>
                         </div>
                     </Form>
+
+                    <Link to="/Admin login">
+                        <Button variant="primary" className="mx-2">
+                           Admin Login
+                        </Button>
+                    </Link>
                     <Link to="/login">
                         <Button variant="primary" className="mx-2">
                             Login

@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { faTrash,faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css";
+import { useEffect } from "react";
 export default function AdminHome({}) {
   //setting state
   const [data, setData] = useState([]);
-  const [searchQuery,setSearchQuery]=useState("")
+  const [searchQuery,setSearchQuery]=useState("");
+
 
   useEffect(() => {
     getAllUser();

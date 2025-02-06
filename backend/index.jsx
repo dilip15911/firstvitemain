@@ -100,7 +100,7 @@ app.post("/userData", async (req, res) => {
   } catch (error) { }
 });
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log("Server Started");
 });
 
@@ -115,7 +115,7 @@ app.post("/forgot-password", async (req, res) => {
     const token = jwt.sign({ email: oldUser.email, id: oldUser._id }, secret, {
       expiresIn: "5m",
     });
-    const link = `http://localhost:3000/reset-password/${oldUser._id}/${token}`;
+    const link = `http://localhost:3001/reset-password/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {

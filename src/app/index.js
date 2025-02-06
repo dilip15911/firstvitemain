@@ -5,7 +5,7 @@ const Home= () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/users")
+    axios.get("http://localhost:3001/api/users")
       .then((response) => {
         setUsers(response.data);
       })
