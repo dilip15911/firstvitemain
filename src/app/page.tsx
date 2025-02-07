@@ -26,6 +26,21 @@ import EligibilityPage from '../components/EligibilityPagee';
 import FinancingOptions from '../components/FinancingOptionss';
 import ApplicationPage from '../components/ApplicationPagee';
 import ProgramCohorts from '../components/ProgramCohortss';
+import CareerSupport from '../components/CareerSupportt';
+import TermAndCondition from '../components/TermAndConditionn';
+import Footer from '../components/Footerr';
+import CourseList from '../components/CourseListt';
+import Sidebar from '../components/ProgrameSidebar';
+import PartnerLogos from '../components/PartnerLogoss';
+import CourseDetailCard from '../components/CourseDetailCards';
+
+
+
+
+
+
+
+
 
 
 
@@ -35,23 +50,33 @@ const App = () => {
     <div>
       <BrowserRouter>
         <CustomNavbarWrapper />
+       
         {/* <Admin /> */}
         {/* <Signup/> */}
         {/* <AdminLogin/> */}
         {/* <GenerativeAICourses/> */}
         <MyCustomCarousel />
+        <PartnerLogos />
+        <Sidebar/>
+        <CourseDetailCard/>
         {/* <ProgramCard /> */}
         {/* <CourseCard /> */}
         {/* <CourseDetail/> */}
         {/* <ProgramSyllabusForm/> */}
-        <ProgramPage/>
-        <GenAICoursePage/>
-        <LearningPath/>
-        <AdmissionProcess/>
-        <EligibilityPage/>
-        <ApplicationPage/>
-        <FinancingOptions/>
-        <ProgramCohorts/>
+        {/* <ProgramPage/> */}
+        {/* <GenAICoursePage/> */}
+        {/* <LearningPath/> */}
+        {/* <AdmissionProcess/> */}
+        {/* <EligibilityPage/> */}
+        {/* <ApplicationPage/> */}
+        {/* <FinancingOptions/> */}
+        {/* <ProgramCohorts/> */}
+        {/* <CareerSupport/> */}
+        <Footer/>
+        <TermAndCondition/>
+        {/* <CourseList/> */}
+        
+        
 
         <Routes>
           <Route path="/login" element={<Login />} />
