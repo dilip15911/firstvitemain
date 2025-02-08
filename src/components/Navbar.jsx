@@ -34,9 +34,17 @@ const CustomNavbarWrapper = () => {
                         <Nav.Link href="#Corporate Training">Corporate Training</Nav.Link>
                         <NavDropdown title="For Business" id="basic-nav-dropdown">
                             {/* Business related links */}
+                            <NavDropdown.Item href="#action3">Become a Trainer</NavDropdown.Item>
+
                         </NavDropdown>
                         <NavDropdown title="More" id="basic-nav-dropdown">
                             {/* Other links */}
+                            <NavDropdown.Item href="#action3">Alumuni</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Resume Builder</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Resourses</NavDropdown.Item>
+
+
+
                         </NavDropdown>
                         <Nav.Link href="#Blog">Blog</Nav.Link>
                     </Nav>
@@ -57,7 +65,7 @@ const CustomNavbarWrapper = () => {
 
                     <Link to="/Admin login">
                         <Button variant="primary" className="mx-2">
-                           Admin Login
+                           Admin 
                         </Button>
                     </Link>
                     <Link to="/login">

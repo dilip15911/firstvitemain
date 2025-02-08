@@ -41,7 +41,7 @@ const partnerLogos = [
 const PartnerLogos = () => {
   return (
     <Container className="text-center py-4">
-      <h2>Partnering with the world's leading universities and companies</h2>
+      <h2>Our Affiliations with the world's leading universities and companies</h2>
       <div className="marquee">
         <div className="marquee-content">
           {partnerLogos.map((logo, index) => (

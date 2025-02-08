@@ -18,6 +18,7 @@ const categories = [
 
 const Sidebar = () => {
   return (
+
     <div className="p-3 bg-light" style={{ width: "300px" }}>
       {/* Most Popular Button */}
       <button className="btn btn-primary w-100 mb-3">Most Popular</button>
