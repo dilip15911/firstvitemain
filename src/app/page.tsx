@@ -33,6 +33,8 @@ import CourseList from '../components/CourseListt';
 import Sidebar from '../components/ProgrameSidebar';
 import PartnerLogos from '../components/PartnerLogoss';
 import CourseDetailCard from '../components/CourseDetailCards';
+import WhyUs from '../components/WhyUss';
+
 
 
 
@@ -57,6 +59,7 @@ const App = () => {
         {/* <GenerativeAICourses/> */}
         <MyCustomCarousel />
         <PartnerLogos />
+        <WhyUs/>
         <Sidebar/>
         <CourseDetailCard/>
         {/* <ProgramCard /> */}
