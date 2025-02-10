@@ -54,7 +54,7 @@ const App = () => {
         <CustomNavbarWrapper />
        
         {/* <Admin /> */}
-        <Signup/>
+        {/* <Signup/> */}
         {/* <AdminLogin/> */}
         {/* <GenerativeAICourses/> */}
         <MyCustomCarousel />
