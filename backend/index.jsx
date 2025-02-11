@@ -31,28 +31,60 @@ require("./imageDetails");
 
 const User = mongoose.model("UserInfo");
 const Images = mongoose.model("ImageDetails");
+
 app.post("/register", async (req, res) => {
   const { fname, lname, email, password, userType } = req.body;
 
-  const encryptedPassword = await bcrypt.hash(password, 10);
+  if (!fname || !lname || !email || !password || !userType) {
+    return res.status(400).json({ error: "All fields are required" });
+  }
+
   try {
     const oldUser = await User.findOne({ email });
 
     if (oldUser) {
-      return res.json({ error: "User Exists" });
+      return res.status(400).json({ error: "User already exists" });
     }
-    await User.create({
+
+    const encryptedPassword = await bcrypt.hash(password, 10);
+
+    const newUser = await User.create({
       fname,
       lname,
       email,
       password: encryptedPassword,
       userType,
     });
-    res.send({ status: "ok" });
+
+    res.status(201).json({ status: "ok", user: newUser });
   } catch (error) {
-    res.send({ status: "error" });
+    console.error("Error in registration:", error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
+// app.post("/register", async (req, res) => {
+//   const { fname, lname, email, password, userType } = req.body;
+
+//   const encryptedPassword = await bcrypt.hash(password, 10);
+//   try {
+//     const oldUser = await User.findOne({ email });
+
+//     if (oldUser) {
+//       return res.json({ error: "User Exists" });
+//     }
+//     await User.create({
+//       fname,
+//       lname,
+//       email,
+//       password: encryptedPassword,
+//       userType,
+//     });
+//     res.send({ status: "ok" });
+//   } catch (error) {
+//     res.send({ status: "error" });
+//   }
+// });
 
 app.post("/login-user", async (req, res) => {
   const { email, password } = req.body;

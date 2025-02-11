@@ -23,7 +23,7 @@ const GenerativeAICourses = () => {
       </Row>
       <Row className="align-items-center">
         {/* Left Side - Text and Partners */}
-        <Col md={6} className="text-center text-md-start">
+        {/* <Col md={6} className="text-center text-md-start">
           <h4 className="fw-bold">Our Program Partners:</h4>
           <Row className="justify-content-center justify-content-md-start">
             <Col xs={4} md={3} className="my-2">
@@ -36,17 +36,17 @@ const GenerativeAICourses = () => {
               <Image src="/path-to-image/partner3.png" alt="Ministry Logo" fluid />
             </Col>
           </Row>
-        </Col>
+        </Col> */}
         
         {/* Right Side - Image */}
-        <Col md={6} className="text-center">
+        {/* <Col md={6} className="text-center">
           <Image 
             src="/path-to-image/generative-ai.png" 
             alt="Generative AI Illustration" 
             fluid 
             style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} 
           />
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );

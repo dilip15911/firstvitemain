@@ -34,6 +34,10 @@ import Sidebar from '../components/ProgrameSidebar';
 import PartnerLogos from '../components/PartnerLogoss';
 import CourseDetailCard from '../components/CourseDetailCards';
 import WhyUs from '../components/WhyUss';
+import JobRolesPage from '../components/JobRolesPagee';
+import CourseTable from '../components/CourseTablee';
+
+
 
 
 
@@ -52,28 +56,34 @@ const App = () => {
     <div>
       <BrowserRouter>
         <CustomNavbarWrapper />
+        <MyCustomCarousel />
        
         {/* <Admin /> */}
         {/* <Signup/> */}
         {/* <AdminLogin/> */}
-        {/* <GenerativeAICourses/> */}
-        <MyCustomCarousel />
-        <PartnerLogos />
-        <WhyUs/>
-        <Sidebar/>
-        <CourseDetailCard/>
+        {/* <PartnerLogos /> */}
+        {/* <WhyUs/> */}
+        {/* <Sidebar/> */}
+        {/* <CourseDetailCard/> */}
         {/* <ProgramCard /> */}
         {/* <CourseCard /> */}
         {/* <CourseDetail/> */}
         {/* <ProgramSyllabusForm/> */}
-        {/* <ProgramPage/> */}
-        {/* <GenAICoursePage/> */}
+
+        {/* Generative AI page Starts from Here*/}
+        <GenerativeAICourses/>
+        <ProgramPage/>
+        <GenAICoursePage/>
+        <JobRolesPage/>
+        <CourseTable/>
+        <ProgramCohorts/>
+        {/*Generative AI page Ends Here  */}
+
         {/* <LearningPath/> */}
         {/* <AdmissionProcess/> */}
         {/* <EligibilityPage/> */}
         {/* <ApplicationPage/> */}
         {/* <FinancingOptions/> */}
-        {/* <ProgramCohorts/> */}
         {/* <CareerSupport/> */}
         <Footer/>
         <TermAndCondition/>
@@ -82,8 +92,9 @@ const App = () => {
         
 
         <Routes>
-          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
 
 
           {/* अन्य रूट्स */}

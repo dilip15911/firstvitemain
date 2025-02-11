@@ -13,7 +13,7 @@ const ProgramPage = () => {
                 <Card.Body>
                   <Card.Title>Earn an Elite Certificate</Card.Title>
                   <Card.Text>
-                    Joint Applied Generative AI program certificate from Purdue University Online and Simplilearn
+                    Joint Applied Generative AI program certificate from Purdue University Online.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -48,8 +48,29 @@ const ProgramPage = () => {
                 </Card.Body>
               </Card>
             </Col>
+
+            <Col md={6} className="mb-3">
+              <Card className="shadow-sm h-100">
+                <Card.Body>
+                  <Card.Title>Master Cutting-Edge Technology</Card.Title>
+                  <Card.Text>
+                  Generative AI is at the forefront of technological innovation, enabling the creation of text, images, audio, and code. By joining this program, you'll gain hands-on experience with state-of-the-art tools and models, positioning you at the leading edge of AI advancements                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={6} className="mb-3">
+              <Card className="shadow-sm h-100">
+                <Card.Body>
+                  <Card.Title>Enhance Creativity and Efficiency</Card.Title>
+                  <Card.Text>
+                  Generative AI can automate content creation, from drafting articles to generating code snippets, thereby boosting productivity. This allows you to focus on higher-level tasks and fosters creative problem-solving by providing novel perspectives and solutions.                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Col>
+        
 
         <Col md={4}>
           <Card className="shadow-sm">
