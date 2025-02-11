@@ -20,33 +20,23 @@ import CourseDetail from '../components/GenerativeAipageDetails';
 import ProgramSyllabusForm from '../components/ProgrameSyllabusForm';
 import ProgramPage from '../components/GenerativeAiProgramePage';
 import GenAICoursePage from '../components/GenAICoursePages';
-import LearningPath from '../components/LearningPaath';
-import AdmissionProcess from '../components/AdmissionProcesss';
-import EligibilityPage from '../components/EligibilityPagee';
-import FinancingOptions from '../components/FinancingOptionss';
-import ApplicationPage from '../components/ApplicationPagee';
-import ProgramCohorts from '../components/ProgramCohortss';
-import CareerSupport from '../components/CareerSupportt';
-import TermAndCondition from '../components/TermAndConditionn';
-import Footer from '../components/Footerr';
-import CourseList from '../components/CourseListt';
-import Sidebar from '../components/ProgrameSidebar';
-import PartnerLogos from '../components/PartnerLogoss';
-import CourseDetailCard from '../components/CourseDetailCards';
-import WhyUs from '../components/WhyUss';
-import JobRolesPage from '../components/JobRolesPagee';
-import CourseTable from '../components/CourseTablee';
-
-
-
-
-
-
-
-
-
-
-
+import LearningPath from '../components/LearningPath';
+import AdmissionProcess from '../components/AdmissionProcess';
+import EligibilityPage from '../components/EligibilityPage';
+import FinancingOptions from '../components/FinancingOptions';
+import ApplicationPage from '../components/ApplicationPage';
+import ProgramCohorts from '../components/ProgramCohorts';
+import CareerSupport from '../components/CareerSupport';
+import TermAndCondition from '../components/TermAndCondition';
+import Footer from '../components/Footer';
+import CourseList from '../components/CourseList';
+import Sidebar from '../components/ProgramSidebar';
+import PartnerLogos from '../components/PartnerLogos';
+import CourseDetailCard from '../components/CourseDetailCard';
+import WhyUs from '../components/WhyUs';
+import JobRolesPage from '../components/JobRolesPage';
+import CourseTable from '../components/CourseTable';
+// import ForBusiness from '../components/ForBusinesss';
 
 
 
@@ -78,6 +68,8 @@ const App = () => {
         <CourseTable/>
         <ProgramCohorts/>
         {/*Generative AI page Ends Here  */}
+
+        {/* <ForBusiness/> */}
 
         {/* <LearningPath/> */}
         {/* <AdmissionProcess/> */}
