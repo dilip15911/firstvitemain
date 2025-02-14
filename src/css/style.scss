@@ -400,6 +400,52 @@ header {
 }
 
 
+/* CSS Styles (AcademySolutions.css) */
+
+.circle-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.center-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section-0 { top: 20px; left: 50%; transform: translateX(-50%); }
+.section-1 { top: 80px; right: 20px; }
+.section-2 { bottom: 80px; right: 20px; }
+.section-3 { bottom: 20px; left: 50%; transform: translateX(-50%); }
+.section-4 { bottom: 80px; left: 20px; }
+.section-5 { top: 80px; left: 20px; }
+
 
 
 

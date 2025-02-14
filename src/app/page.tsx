@@ -25,18 +25,32 @@ import AdmissionProcess from '../components/AdmissionProcess';
 import EligibilityPage from '../components/EligibilityPage';
 import FinancingOptions from '../components/FinancingOptions';
 import ApplicationPage from '../components/ApplicationPage';
-import ProgramCohorts from '../components/ProgramCohorts';
+import ProgramCohorts from '../components/ProgramCohortss';
 import CareerSupport from '../components/CareerSupport';
-import TermAndCondition from '../components/TermAndCondition';
-import Footer from '../components/Footer';
-import CourseList from '../components/CourseList';
-import Sidebar from '../components/ProgramSidebar';
-import PartnerLogos from '../components/PartnerLogos';
-import CourseDetailCard from '../components/CourseDetailCard';
-import WhyUs from '../components/WhyUs';
-import JobRolesPage from '../components/JobRolesPage';
-import CourseTable from '../components/CourseTable';
+import TermAndCondition from '../components/TermAndConditionn';
+import Footer from '../components/Footerr';
+import CourseList from '../components/CourseListt';
+import Sidebar from '../components/ProgramSidebarr';
+import PartnerLogos from '../components/PartnerLogoss';
+import CourseDetailCard from '../components/CourseDetailCards';
+import WhyUs from '../components/WhyUss';
+import JobRolesPage from '../components/JobRolesPagee';
+import CourseTable from '../components/CourseTablee';
 // import ForBusiness from '../components/ForBusinesss';
+import CorporateTraining from '../components/CorporateTrainingg';
+import FAQPage from '../components/FAQPagee';
+import CorporateLanding from '../components/CorporateLandingg';
+import WorkForceTraining from '../components/WorkForceTrainingg';
+import SkillCoverage from '../components/SkillCoveragee';
+import AcademySolutions from '../components/AcademySolutionss';
+
+
+
+
+
+
+
+
 
 
 
@@ -61,15 +75,21 @@ const App = () => {
         {/* <ProgramSyllabusForm/> */}
 
         {/* Generative AI page Starts from Here*/}
-        <GenerativeAICourses/>
+        {/* <GenerativeAICourses/>
         <ProgramPage/>
         <GenAICoursePage/>
         <JobRolesPage/>
         <CourseTable/>
-        <ProgramCohorts/>
+        <ProgramCohorts/> */}
         {/*Generative AI page Ends Here  */}
 
         {/* <ForBusiness/> */}
+        <CorporateLanding/>
+        <CorporateTraining/>
+        <WorkForceTraining/>
+        <SkillCoverage/>
+        <AcademySolutions/>
+        <FAQPage/>
 
         {/* <LearningPath/> */}
         {/* <AdmissionProcess/> */}
