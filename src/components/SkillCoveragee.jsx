@@ -1,50 +1,50 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import "../css/style.scss";
+
 
 const SkillCoverage = () => {
-  return (
-    <Container className="text-center py-5">
-      <Row className="align-items-center">
-        <Col md={5} className="text-start">
-          <h2>
-            Comprehensive skills coverage built for <br />
-            <strong>40+ digital roles</strong>
-          </h2>
-          <Button variant="primary" className="mt-3 me-2">
-            Training schedules
-          </Button>
-          <Button variant="outline-primary" className="mt-3">
-            Contact sales
-          </Button>
-        </Col>
-        <Col md={7} className="d-flex justify-content-center">
-          <div className="position-relative">
-            <div className="circle bg-light p-4 rounded-circle shadow">
-              <h4>Academy Solutions</h4>
-            </div>
-            <div className="position-absolute" style={{ top: "-20px", left: "35%" }}>
-              <span className="badge bg-light text-dark">Digital Business</span>
-            </div>
-            <div className="position-absolute" style={{ top: "15%", right: "-10%" }}>
-              <span className="badge bg-light text-dark">Data & AI</span>
-            </div>
-            <div className="position-absolute" style={{ bottom: "15%", right: "-10%" }}>
-              <span className="badge bg-light text-dark">Cloud & DevOps</span>
-            </div>
-            <div className="position-absolute" style={{ bottom: "-20px", left: "35%" }}>
-              <span className="badge bg-light text-dark">Software Development</span>
-            </div>
-            <div className="position-absolute" style={{ bottom: "15%", left: "-10%" }}>
-              <span className="badge bg-light text-dark">Cybersecurity</span>
-            </div>
-            <div className="position-absolute" style={{ top: "15%", left: "-10%" }}>
-              <span className="badge bg-light text-dark">Digital Operations</span>
-            </div>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  );
+    const sections = [
+        { name: "Digital Business", color: "#6cc24a" },
+        { name: "Data & AI", color: "#2fc4b2" },
+        { name: "Cloud & DevOps", color: "#32a9e0" },
+        { name: "Software Development", color: "#2e78d6" },
+        { name: "Cybersecurity", color: "#2452a6" },
+        { name: "Digital Operations", color: "#1e3a75" }
+    ];
+    return (
+        <Container className="text-center py-5 d-flex">
+            <Row className="">
+                <Col md={5} className="text-center container d-flex flex-column justify-content-center">
+                    <h2>
+                        Comprehensive skills coverage built for <br />
+                        <strong>10+ digital roles</strong>
+                    </h2>
+                    <Button variant="primary" className="mt-3 me-2">
+                        Training schedules
+                    </Button>
+                    <Button variant="outline-primary" className="mt-3">
+                        Contact sales
+                    </Button>
+                </Col>
+
+                <Col className="container d-flex justify-content-center align-items-center">
+                    <div className="circle-container position-relative">
+                        <div className="center-circle">Solutions for you</div>
+                        {sections.map((section, index) => (
+                            <div
+                                key={index}
+                                className={`section section-${index}`}
+                                style={{ backgroundColor: section.color }}
+                            >
+                                {section.name}
+                            </div>
+                        ))}
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    );
 };
 
 export default SkillCoverage;

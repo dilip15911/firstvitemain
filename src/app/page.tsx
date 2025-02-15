@@ -38,18 +38,14 @@ import JobRolesPage from '../components/JobRolesPagee';
 import CourseTable from '../components/CourseTablee';
 // import ForBusiness from '../components/ForBusinesss';
 import CorporateTraining from '../components/CorporateTrainingg';
-import FAQPage from '../components/FAQPagee';
+import FAQPageTrainer from '../components/FAQPageTrainerr';
 import CorporateLanding from '../components/CorporateLandingg';
 import WorkForceTraining from '../components/WorkForceTrainingg';
 import SkillCoverage from '../components/SkillCoveragee';
 import AcademySolutions from '../components/AcademySolutionss';
-
-
-
-
-
-
-
+import TrainerSignup from '../components/TrainerSignupp';
+import FAQPageCorporate from '../components/FAQPageCorporatee';
+import FAQPageHome from '../components/FAQPageHomee';
 
 
 
@@ -73,6 +69,7 @@ const App = () => {
         {/* <CourseCard /> */}
         {/* <CourseDetail/> */}
         {/* <ProgramSyllabusForm/> */}
+          <FAQPageHome/>
 
         {/* Generative AI page Starts from Here*/}
         {/* <GenerativeAICourses/>
@@ -83,13 +80,23 @@ const App = () => {
         <ProgramCohorts/> */}
         {/*Generative AI page Ends Here  */}
 
+
+        {/* Trainer page */}
+        {/* <TrainerSignup/> */}
+        {/* <FAQPageTrainer/> */}
+
+
+
+
         {/* <ForBusiness/> */}
-        <CorporateLanding/>
-        <CorporateTraining/>
-        <WorkForceTraining/>
-        <SkillCoverage/>
-        <AcademySolutions/>
-        <FAQPage/>
+
+        {/* <CorporateLanding/> */}
+        {/* <SkillCoverage/> */}
+        {/* <FAQPage/> */}
+        {/* <AcademySolutions/> */}
+        {/* <CorporateTraining/> */}
+        {/* <WorkForceTraining/> */}
+        {/* <FAQPageCorporate/> */}
 
         {/* <LearningPath/> */}
         {/* <AdmissionProcess/> */}
