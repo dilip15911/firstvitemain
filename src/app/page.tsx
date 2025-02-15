@@ -30,7 +30,7 @@ import CareerSupport from '../components/CareerSupport';
 import TermAndCondition from '../components/TermAndConditionn';
 import Footer from '../components/Footerr';
 import CourseList from '../components/CourseListt';
-import Sidebar from '../components/ProgramSidebarr';
+import Sidebar from '../components/ProgrameSidebar';
 import PartnerLogos from '../components/PartnerLogoss';
 import CourseDetailCard from '../components/CourseDetailCards';
 import WhyUs from '../components/WhyUss';
@@ -46,6 +46,8 @@ import AcademySolutions from '../components/AcademySolutionss';
 import TrainerSignup from '../components/TrainerSignupp';
 import FAQPageCorporate from '../components/FAQPageCorporatee';
 import FAQPageHome from '../components/FAQPageHomee';
+import HomePageBanner from '../components/HomePageBannerr';
+import ProgramCard from '../components/ProgramCardd';
 
 
 
@@ -57,13 +59,14 @@ const App = () => {
       <BrowserRouter>
         <CustomNavbarWrapper />
         <MyCustomCarousel />
+        <HomePageBanner/>
        
         {/* <Admin /> */}
         {/* <Signup/> */}
         {/* <AdminLogin/> */}
-        {/* <PartnerLogos /> */}
-        {/* <WhyUs/> */}
-        {/* <Sidebar/> */}
+        <PartnerLogos />
+        <WhyUs/>
+        <Sidebar/>
         {/* <CourseDetailCard/> */}
         {/* <ProgramCard /> */}
         {/* <CourseCard /> */}

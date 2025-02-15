@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-dark text-white py-4">
-            <Container className='mb-5'>
+        <footer className="bg-dark text-white py-4  ">
+            <Container className='mb-5 '>
                 <Row>
                     {/* <Col md={4}>
               <h5>Trending Resources</h5>
@@ -16,7 +16,7 @@ const Footer = () => {
                 Docker Tutorial | Git Tutorial | Kubernetes Tutorial | Power BI Tutorial | CSS Tutorial
               </p>
             </Col> */}
-                    <Col md={6}>
+                    <Col md={6} >
                         <h5>Policies</h5>
                         <p>Terms and Conditions | Privacy Policy | Refund Policy</p>
                     </Col>

@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const features = [
-  { title: "Certified & Experienced Instructors",img:"",  color: "#C3B1E1" },
-  { title: "Post Training Followups", img: "membership.png", color: "#A1DAB4" },
-  { title: "Tailor Made Training", img: "training.png", color: "#F8C8C4" },
-  { title: "Flexible Schedule", img: "schedule.png", color: "#E6A8D7" },
-  { title: "Access to the Recorded Sessions", img: "recordings.png", color: "#90EE90" },
-  { title: "10 in 1 Program", img: "program.png", color: "#C4A484" },
-  { title: "Masterclasses By firstVite", img: "masterclass.png", color: "#B0D9B1" },
-  { title: "One-to-One Training", img: "one-to-one.png", color: "#E9967A" }
+  { title: "Tailor Made Training", img: "", color: "#F8C8C4" },
+  { title: "Flexible Schedule", img: "", color: "#E6A8D7" },
+  { title: "10 in 1 Program", img: "", color: "#C4A484" },
+  { title: "One-to-One Training", img: "", color: "#E9967A" },
+  { title: "Experienced Instructors",img:"",  color: "#C3B1E1" },
+  { title: "Post Training Followups", img: "", color: "#A1DAB4" },
+  { title: "Access to the Recorded Sessions", img: "", color: "#90EE90" },
+  { title: "Masterclasses By firstVite", img: "", color: "#B0D9B1" },
 ];
 
 const WhyUs = () => {
