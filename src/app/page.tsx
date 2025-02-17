@@ -48,6 +48,8 @@ import FAQPageCorporate from '../components/FAQPageCorporatee';
 import FAQPageHome from '../components/FAQPageHomee';
 import HomePageBanner from '../components/HomePageBannerr';
 import ProgramCard from '../components/ProgramCardd';
+import CertificationBanner from '../components/CertificationBannerr';
+
 
 
 
@@ -64,23 +66,23 @@ const App = () => {
         {/* <Admin /> */}
         {/* <Signup/> */}
         {/* <AdminLogin/> */}
-        <PartnerLogos />
-        <WhyUs/>
+        {/* <PartnerLogos /> */}
+        {/* <WhyUs/> */}
         <Sidebar/>
         {/* <CourseDetailCard/> */}
         {/* <ProgramCard /> */}
         {/* <CourseCard /> */}
         {/* <CourseDetail/> */}
         {/* <ProgramSyllabusForm/> */}
-          <FAQPageHome/>
+          {/* <FAQPageHome/> */}
 
         {/* Generative AI page Starts from Here*/}
-        {/* <GenerativeAICourses/>
-        <ProgramPage/>
-        <GenAICoursePage/>
-        <JobRolesPage/>
-        <CourseTable/>
-        <ProgramCohorts/> */}
+        {/* <GenerativeAICourses/> */}
+        {/* <ProgramPage/> */}
+        {/* <GenAICoursePage/> */}
+        {/* <JobRolesPage/> */}
+        {/* <CourseTable/> */}
+        {/* <ProgramCohorts/> */}
         {/*Generative AI page Ends Here  */}
 
 
@@ -95,8 +97,9 @@ const App = () => {
 
         {/* <CorporateLanding/> */}
         {/* <SkillCoverage/> */}
+        <CertificationBanner/>
         {/* <FAQPage/> */}
-        {/* <AcademySolutions/> */}
+        <AcademySolutions/>
         {/* <CorporateTraining/> */}
         {/* <WorkForceTraining/> */}
         {/* <FAQPageCorporate/> */}

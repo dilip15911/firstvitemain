@@ -448,6 +448,25 @@ header {
 
 
 
+// certificate banner
 
+.certification-banner {
+  background-color: #fcf8e3; /* Light yellowish background */
+  text-align: center;
+}
+
+.certification-image {
+  max-width: 100%;
+  height: 10vh;
+}
+
+.certification-text {
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary blue */
+}
+
+.highlight-text {
+  color: #007bff;
+}
 
 

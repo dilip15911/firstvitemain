@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
     return (
         <footer className="bg-dark text-white py-4  ">
-            <Container className='mb-5 '>
+            <Container className='mb-5 ' >
                 <Row>
                     {/* <Col md={4}>
               <h5>Trending Resources</h5>
@@ -17,13 +17,13 @@ const Footer = () => {
               </p>
             </Col> */}
                     <Col md={6} >
-                        <h5>Policies</h5>
-                        <p>Terms and Conditions | Privacy Policy | Refund Policy</p>
+                        <h5 className='fs-6'>Policies</h5>
+                        <p className="small">Terms and Conditions | Privacy Policy | Refund Policy</p>
                     </Col>
                     <Col md={6}>
-                        <h5>Country </h5>
+                        <h5 className='fs-6'>Country </h5>
                         <Dropdown>
-                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                            <Dropdown.Toggle variant="secondary" id="dropdown-basic" className='small'>
                                 🇮🇳 India
                             </Dropdown.Toggle>
                             
@@ -33,8 +33,8 @@ const Footer = () => {
                   <Dropdown.Item href="#">Canada</Dropdown.Item>
                 </Dropdown.Menu> */}
                         </Dropdown>
-                        <p>Address: H-161 BSI Business Park Sector-63 Noida gautam Budh Nagar Uttar pardesh 201301</p>
-                        <p>Phone No: 9810585808</p>
+                        <p className="small">Address: H-161 BSI Business Park Sector-63 Noida gautam Budh Nagar Uttar pardesh 201301</p>
+                        <p className="small">Phone No: 9810585808</p>
                     </Col>
                 </Row>
             </Container>
@@ -64,7 +64,7 @@ const Footer = () => {
 
                     <Col md={2} sm={4} xs={6}>
                         <h5>Company</h5>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled" style={{"font-size": "12px"}}>
                             <li>About us</li>
                             <li>Careers</li>
                             <li>Newsroom</li>
@@ -76,7 +76,7 @@ const Footer = () => {
 
                     <Col md={2} sm={4} xs={6}>
                         <h5>Work with us</h5>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled" style={{"font-size": "12px"}}>
                             <li>Become an instructor</li>
                             <li>Blog as guest</li>
                         </ul>
@@ -84,7 +84,7 @@ const Footer = () => {
 
                     <Col md={2} sm={4} xs={6}>
                         <h5>Discover</h5>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled" style={{"font-size": "12px"}}>
                             <li>Free Courses</li>
                             <li>Skillup Sitemap</li>
                             <li>Resources</li>
@@ -95,7 +95,7 @@ const Footer = () => {
 
                     <Col md={2} sm={4} xs={6}>
                         <h5>For Businesses</h5>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled" style={{"font-size": "12px"}}>
                             <li>Corporate training</li>
                             <li>Simplilearn Learning Hub+</li>
                             <li>Guaranteed-to-run Classes</li>
